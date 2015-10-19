@@ -15,7 +15,7 @@ func TestHandler(t *testing.T) {
 
 	w := httptest.NewRecorder()
 	handler(w, req)
-	if !strings.Contains(w.Body.String(), "Hello, World!") {
+	if !strings.Contains(w.Body.String(), "Hello, World2!") {
 		t.Error(w.Body.String())
 	}
 }
